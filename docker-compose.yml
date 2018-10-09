@@ -1,0 +1,22 @@
+version: '2'
+services:
+  mongo:
+    image: mongo:3.4
+    container_name: elixir_mongo
+    ports:
+      - "27017:27017"
+      - "28017:28017"
+    environment:
+      MONGODB_PASS: pw
+    volumes:
+      - ./docker-mongo-3-data:/data/db
+
+  elixir:
+    build: elixir_image
+    container_name: phoenix
+    links:
+      - "mongo:elixir_mongo"
+    volumes:
+      - ./app:/app
+    ports:
+      - "4000:4000"
