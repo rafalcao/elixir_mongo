@@ -15,7 +15,7 @@ Docker environment with Elixir (Phoenix) and MongoDB
 
 ## Create new project
 
-mix phx.new hello --no-ecto --no-html 
+`mix phx.new hello --no-ecto --no-html`
 
 
 ## Server project
