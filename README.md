@@ -5,9 +5,20 @@ Docker environment with Elixir (Phoenix) and MongoDB
 
 `docker exec -it phoenix bash`
 
+
+## Execute Jef project
+
 `cd /app/jef/`
 
 `mix deps.get`
+
+
+## Create new project
+
+mix phx.new hello --no-ecto --no-html 
+
+
+## Server project
 
 `mix phx.server`
 
