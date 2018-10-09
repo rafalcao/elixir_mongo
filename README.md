@@ -1,4 +1,4 @@
-# elixir_mongo
+# Elixir Phoenix with Mongo
 Docker environment with Elixir (Phoenix) and MongoDB
 
 ` docker-compose up -d `
